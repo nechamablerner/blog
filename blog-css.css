@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #082469;
+    --text-color: #000000;
+    --secondary-color:rgb(255,0,0);
+}
+
+body{
+    margin:0;
+    padding-top: 150px;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 15px;
+    position:fixed;
+    top:0;
+    width:100%;
+    text-align:justify;
+    font-size: larger;
+    z-index: 100;
+}
+p{
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--text-color); 
+
+}
+
+h1{
+    color:white;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+h2,h3{
+    color: var(--primary-color);
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 1.2;
+}
+a:link, a:visited{
+    color:var(--primary-color);
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+a:hover,a:focus{
+    color:var(--secondary-color) ;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 50px; 
+    padding: 20px;
+   
+}
+
+section{
+    margin-bottom: 50px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 30px;
+}
+
+footer{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.sidebar{
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    position: sticky;
+    top:120px;
+    height: fit-content;
+    
+}
+
+.sidebar a:link, .sidebar a:visited{
+    color: #ffffff;
+    display: block;
+    padding: 8px;
+  
+}
+
+.sidebar a:hover, .sidebar a:focus{
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+header nav a:link, header nav a:visited{
+    color: #ffffff;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+header nav a:hover, header nav a:focus{
+    color:var(--secondary-color) ;
+}
+
+.overview-list{
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+}
+.overview-list li{
+    margin-bottom: 15px;
+}
+.btn-submit{
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 5px;
+    
+}
+
+.btn-submit:hover, .btn-submit:active{
+    background-color:#3a6ad9;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+}
+
+img{
+    border-radius: 8px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+
+}
+
+/* commit the html overveiw changes sepratly then the css code  */
