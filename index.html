@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jane Doe's Blog</title>
     <link rel="icon" type="image/png" href="computer_image.png">
+    <link rel ="stylesheet" href="blog-css.css">
 </head>
 <body>
     <header> 
@@ -13,17 +14,28 @@
             <a href ="about.html">About Us</a>
         </nav>
     </header>
+    <div class="grid-container">
+        <div class="sidebar">
+            <ul class="overview-list">
+                <li><a href="#definition">What is Ransomware</a></li>
+                <li><a href="#history">A Brief History</a></li>
+                <li><a href="#spread">How it Spreads</a></li>
+                <li><a href="#protection">How to Protect</a></li>
+                <li><a href="#solutions">What if Attacked</a></li>
+            </ul>
+        </div>
     <main> 
         <article> 
             
             <h2>Evolution of Ransomware and How to Protect Yourself</h2>
             <figure>
                 <img src="HW1_Blog_Image_2.jpg"
+                    class="photo"
                     alt="lock surrounded in chains"
                     width="600"
                     height="400">
             </figure>
-            <section>
+            <section id="definition">
                 <h3> What is Ransomware?</h3>
                 <p>Imagine logging into your computer one day only to find that all your files—pictures, homework, 
                 and even your favorite games—are locked. A scary message pops up saying you have to pay 
@@ -31,7 +43,7 @@
                 cybercriminals to extort money from victims.</p>
             </section>
 
-            <section>
+            <section id="history">
                 <h3>A Brief History of Ransomware</h3>
                 <p> Ransomware has come a long way since it first appeared. In 1989, the first ransomware, called 
                 the AIDS Trojan, was distributed through floppy disks. The ransom? A payment sent by mail!</p>
@@ -43,10 +55,11 @@
                 the ransom isn’t paid. This double-threat tactic makes it even more dangerous.</p>
             </section>
             
-            <section>
+            <section id="spread">
             <h3>How Does Ransomware Spread?</h3>
             <figure>
                 <img src="HW1_Blog_Image_1.jpg"
+                    class="photo"
                     alt="Robber coming out of a phone"
                     width="600"
                     hight="400">
@@ -66,7 +79,7 @@
             </ul>
             </section>
             
-            <section>
+            <section id="protection">
                 <h3> How to Protect Yourself</h3>
                 <h4>Here are some easy ways to keep ransomware out of your life: </h4>
                 <ol> 
@@ -85,7 +98,7 @@
                 </ol>
             </section>
             
-            <section>
+            <section id="solutions">
                 <h3> What If You’re Attacked?</h3>
                 <h4>If you ever become a victim of ransomware:</h4>
                 <ul> 
@@ -98,7 +111,7 @@
                 </ul>
             </section>
            
-            <section> 
+            <section id="additonal-info"> 
                 <h3>Learn More</h3>
                 <p> Want to dive deeper into cybersecurity? check out these helpful resources:</p>
                 <ul>
@@ -108,7 +121,7 @@
                 <p>By staying alert and following these tips, you can reduce your chances of falling victim to 
                 ransomware. Remember, cybersecurity is all about being proactive! </p>
             </section>
-            <section>
+            <section id="connect">
                 <h3> Stay Updated</h3>
                 <p>Want to know when a new blog is posted? Sign up below to receive updates directly to your 
                 email</p>
@@ -117,12 +130,13 @@
                     <input type="text" id="name"name="name"><br>
                     <label for ="email">Email:</label><br>
                     <input type="text" id="email"name="email"><br>
-                    <input type="Submit" value="Submit">
+                    <input type="Submit" class="btn-submit" value="Submit">
                 </form>
 
             </section>
         </article>
     </main>
+    </div>
     <hr> 
     <footer> 
         <p>&copy; 2025 Jane Doe | <a href="mailto:janedoe@example.com">janedoe@example.com </a> </p>
